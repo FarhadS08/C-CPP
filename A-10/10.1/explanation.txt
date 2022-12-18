@@ -1,0 +1,36 @@
+/*
+CH-230-A
+a10 p1.[cpp]
+Farhad Suleymanzade
+fsuleymanz@jacobs-university.de
+*/
+
+//1
+A) When we comment out "using namespace std;" our program cannot use cin, cout or string.
+It's because they are a part of C++ standart library and without its implemantation they do not work.
+If we want to remove "using namespace std;" then we have to use cin, cout and string functions as this:
+
+std::cout, std::cin or std::string
+
+
+B) If we remove Critter:: prefix from one of the methods, that method won't work because it's not going to know
+which class it belonges to.
+
+
+
+
+//2
+a) Because we used function from std(cout, cin, string) we have to either use "using namespace std" or "std::"
+for example:
+
+std:: string
+
+OR
+
+using namespace std
+
+string
+
+
+B) when we comment out Critter:: compiler can not understand which function we want to take.
+function we want to take is in a class called Critter, so we have to assign it the way it is writter(Critter::)
